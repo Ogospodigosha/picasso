@@ -1,0 +1,35 @@
+
+
+.wrapper-layout {
+  //text-overflow: ellipsis;
+  height: 150px;
+  overflow: hidden;
+  max-height: 200px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(38,53,104,.25);
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+
+  box-sizing: border-box;
+  padding: 16px;
+  @media screen and (min-width: 768px) {
+    & {
+      padding: 24px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    & {
+      grid-template-columns: 100%;
+
+    }
+  }
+  @media screen and  (min-width: 768px) and (max-width: 1040px) {
+    & {
+      grid-template-columns: 1fr 1fr;
+
+    }
+  }
+}
+

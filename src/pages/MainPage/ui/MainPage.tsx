@@ -1,16 +1,19 @@
-
+import cls from './MainPage.module.scss'
 import {useGetPostsQuery} from "shared/api/api";
-import {PageLoader} from "shared/ui/PageLoader/PageLoader";
+import {Container} from "shared/ui/Container/Container";
+
 
 
 const MainPage = () => {
 
-    const {data=[],isLoading } = useGetPostsQuery()
-    if (isLoading) return <PageLoader/>
+    const {data = [], isLoading} = useGetPostsQuery()
     return (
         <div>
             <ul>
-                {data.map(el =>(<li key={el.userId}>{el.body}</li>))}
+                {data.map(el => (<Container cls={'wrapper-layout'}>
+                    <li className={cls.item} style={{marginBottom: '20px'}} key={el.body}><span style={{color: 'green'}}>TITLE</span>: {el.title}</li>
+                    <li className={cls.item} key={el.body}><span style={{color: 'green'}}>BODY</span>: {el.body}</li>
+                </Container>))}
             </ul>
 
 

@@ -36,6 +36,7 @@
     "css-loader": "^6.6.0",
     "gh-pages": "^5.0.0",
     "react": "^17.0.2",
+    "react-content-loader": "^6.2.1",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.44.3",
     "react-redux": "^8.1.2",

@@ -4,7 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 import { MainPage } from 'pages/MainPage';
 import { Navbar } from 'widgets/Navbar';
 import { NotFoundPage } from 'pages/NotFoundPage';
-import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
+import {PageLoader} from "shared/ui/PageLoader/PageLoader";
+
 
 const App = () => {
   return (
