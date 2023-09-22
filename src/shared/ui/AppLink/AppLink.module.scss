@@ -1,0 +1,20 @@
+.AppLink {
+  color:var(--primary-color);
+  text-decoration: none;
+}
+.active {
+  //color:var(--primary-color);
+  //text-decoration: none;
+}
+.active::after {
+  content: "";
+  width: 6px;
+  height: 37px;
+  display: block;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: -3px;
+  background-color: var(--navbar-color);
+}
+
